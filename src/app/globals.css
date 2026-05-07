@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-maroon: #6B0F1A;
+  --color-gold-accent: #C9A84C;
+  --color-warm-ivory: #FFF8EE;
+  
+  /* Requested Pastel Palette */
+  --color-light-purple: #E0BBE4;
+  --color-light-pink: #FFD1DC;
+  --color-light-red: #FFB7B2;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-script: "Great Vibes", cursive;
+}
+
+body {
+  @apply bg-[#fdfaf6] text-deep-maroon overflow-x-hidden;
+}
+
+h1, h2, h3 {
+  @apply font-serif;
+}
+
+/* Perspective for 3D card */
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Custom Background Animation Utilities */
+.bg-pastel-gradient {
+  background: linear-gradient(135deg, var(--color-light-purple) 0%, var(--color-light-pink) 50%, var(--color-light-red) 100%);
+  opacity: 0.15;
+}
