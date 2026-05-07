@@ -6,14 +6,11 @@ import Hero from "@/components/sections/Hero";
 // import RSVPForm from "@/components/sections/RSVPForm";
 // import Footer from "@/components/sections/Footer";
 
-const BackgroundDecor = dynamic(() => import("@/components/sections/BackgroundDecor"), {
-  ssr: false,
-});
+// import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
     <main className="relative">
-      {/* <BackgroundDecor /> */}
       <Hero />
       {/* <EventDetails /> */}
       {/* <RSVPForm /> */}
